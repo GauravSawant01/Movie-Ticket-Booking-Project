@@ -1,0 +1,123 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Ticket Booking</title>
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+        <script type="application/javascript" href="./bootstrap/js/bootstrap.min.js"></script>
+        <script type="application/javascript" href="./bootstrap/js/jquery.min.js"></script>
+        <script type="application/javascript" href="index.js"></script>
+    </head>
+	<body >
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+			<a href="#" class="navbar-brand px-3">[MovieMafia]</a>
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+			</ul>
+			<ul class="navbar-nav ms-auto">
+				<li>
+					<form class="form-inline my-2 my-lg-0 mx-3">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0 mx-2" type="submit">Search</button>
+						</div>
+					</form>
+				</li>
+				<li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+				<li class="nav-item"><a href="register.html" class="nav-link px-4">Register</a></li>
+			</ul>
+        </nav>
+
+		<section>
+			<div class="mt-3 mx-2">
+				<div id="slideshow" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/706b9474134343.5c239806af449.jpg" class="d-block w-100 h-50">
+							<div class="carousel-caption">
+								<h4>URI</h4>
+							</div>
+						</div>
+						<div class="carousel-item active">
+							<img src="https://i.pinimg.com/originals/93/17/c3/9317c3fb92d45a42a911ad1a2140f8b1.jpg" class="d-block w-100 h-50">
+							<div class="carousel-caption">
+								<h4>Avengers</h4>
+							</div>
+						</div>
+						<div class="carousel-item active">
+							<img src="https://wallpaperaccess.com/full/1076854.jpg" class="d-block w-100 h-50">
+							<div class="carousel-caption">
+								<h4>Avatar</h4>
+							</div>
+						</div>
+						<a href="#slideshow" class="carousel-control-prev" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a href="#slideshow" class="carousel-control-next" role="button" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<article>
+			<div class="mt-4 mx-3">
+				<div class="bg-primary rounded">
+					<h1 class="p-3">Movies</h1>
+				</div>
+				<div class="row mt-4">
+					<div class="container col card m-3 p-2" style="height: 30rem;">
+						<img id="BulletTrain" onclick="getMovie('Bullet Train', 250); window.open('booking.html', '_blank');" src="https://assetscdn1.paytm.com/images/cinema/Bullet-Train-705x750-51ad07a0-0aa1-11ed-a7dd-81ce325cbf6d.jpg" class="d-block h-100 w-100">
+						<h4 class="m-3">Bullet Train</h4>
+					</div>
+					<div class="container col card m-3 p-2" style="height: 30rem;">
+						<img src="https://assetscdn1.paytm.com/images/cinema/Ekda-Kay-Zala--705x750-8db114d0-1172-11ed-86fa-7f1abd680865.jpg" class="d-block h-100 w-100">
+						<h4 class="m-3">Ekda Kay Zal</h4>
+					</div>
+					<div class="container col card m-3 p-2" style="height: 30rem;">
+						<img src="https://assetscdn1.paytm.com/images/cinema/De-Dhakka-2-705x750-f8629e90-14cc-11ed-9693-830ba8142915.jpg" class="d-block h-100 w-100">
+						<h4 class="m-3">De Dhakka 2</h4>
+					</div>
+					<div class="container col card m-3 p-2" style="height: 30rem;">
+						<img src="https://assetscdn1.paytm.com/images/cinema/De-Dhakka-2-705x750-f8629e90-14cc-11ed-9693-830ba8142915.jpg" class="d-block h-100 w-100">
+						<h4 class="m-3">De Dhakka 2</h4>
+					</div>
+				</div>
+
+				<div class="row mt-4">
+					<div class="container col card m-3 p-2" style="height: 30rem;">
+						<img src="https://assetscdn1.paytm.com/images/cinema/Sita-Ramam--705x750-6b2d90c0-1080-11ed-9f84-5129a4889e65.jpg" class="d-block h-100 w-100">
+						<h4 class="m-3">Sita Ramam</h4>
+					</div>
+					<div class="container col card m-3 p-2" style="height: 30rem;">
+						<img src="https://assetscdn1.paytm.com/images/cinema/Time-Pass-3--705x750-37c1e180-0cf4-11ed-8d92-1b85cbd56391.jpg" class="d-block h-100 w-100">
+						<h4 class="m-3">Time Pass 3</h4>
+					</div>
+					<div class="container col card m-3 p-2" style="height: 30rem;">
+						<img src="https://assetscdn1.paytm.com/images/cinema/Ekda-Kay-Zala--705x750-8db114d0-1172-11ed-86fa-7f1abd680865.jpg" class="d-block h-100 w-100">
+						<h4 class="m-3">Ekda Kay Zal</h4>
+					</div>
+					<div class="container col card m-3 p-2" style="height: 30rem;">
+						<img src="https://assetscdn1.paytm.com/images/cinema/De-Dhakka-2-705x750-f8629e90-14cc-11ed-9693-830ba8142915.jpg" class="d-block h-100 w-100">
+						<h4 class="m-3">De Dhakka 2</h4>
+					</div>
+				</div>
+			</div>			
+		</article>
+		
+		<footer>
+			<div class="text-center mt-5 pt-3 pb-2 bg-success">
+				<p>All Rights Reserved 2022 @ [MovieMafia]</p>
+			</div>
+		</footer>
+		<script type="application/javascript" src="booking.js"></script>
+	</body>
+</html>
